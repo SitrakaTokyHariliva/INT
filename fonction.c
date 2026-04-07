@@ -2,8 +2,12 @@
 #include <math.h>
 #include "declaration.h"
 
-float f(double x){
+float f(float x){
   return cos (x) - (log (x) / x);
+}
+
+float g(float x){
+  return (x - f(x));
 }
 
 float dichotomie(float a, float b) {
@@ -32,3 +36,18 @@ float newton(float x0){
   }
   return x;
 }
+
+
+float point_fixe(float x0, float x1){
+ float x0, x1;
+  int i = 1;
+  while (fabs(f(x0) > EPS)
+    {
+    x1 = g(x0);
+    printf("i= %d, x = %f\n", i, x1);
+    i++;
+    x0 = x1;
+    }
+  return x0;
+}
+

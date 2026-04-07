@@ -3,11 +3,11 @@
 
 #define EPS 0.0000001
 
-double f(double x);
-double dichotomie(double a, double b);
-double newton(double x0);
+float f(float x);
+float dichotomie(float a, float b);
+float newton(float x0);
 
-double aire_rectangles(double a, double b, int n);
-double aire_trapezes(double a, double b, int n);
+float aire_rectangles(float a, float b, int n);
+float aire_trapezes(float a, float b, int n);
 
 #endif

@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-void lecture_fichier(char tab_etudiant[MAX_ETUDIANTS][4][50];){
+void lecture_fichier(char tab_etudiant[MAX_ETUDIANTS][4][50]){
     FILE *f;
     char buffer_header[200];
     
